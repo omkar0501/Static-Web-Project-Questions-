@@ -23,7 +23,24 @@ When you enable OAC, CloudFront gets access to your S3 bucket through a special 
 # How does CloudFront improve the performance of your website?
   CloudFront speeds up your website by storing content in servers around the world. It delivers the content from the nearest server, reducing load times and making your site faster.
 
+# What are edge locations in CloudFront, and how do they help in content delivery?
+  Edge Locations in Amazon CloudFront are data centers distributed globally, where cached copies of content are stored. These locations are part of AWS's global content delivery network (CDN).
+    
+   ## How They Help in Content Delivery:
+Reduced Latency: Deliver content from the nearest edge location, ensuring faster load times for users.
+Improved Performance: Cached content minimizes requests to the origin server.
+High Availability: Multiple edge locations ensure consistent availability, even during high traffic.
+Scalability: Handles a large volume of requests efficiently by serving content locally.
 
+# How do you secure your CloudFront distribution to prevent unauthorized access?
+   To secure a CloudFront distribution:
+
+Use OAC to restrict S3 access to CloudFront only.
+Enforce HTTPS for secure communication.
+Implement Signed URLs/Cookies for content access control.
+Restrict access using IP filtering and geo-restrictions.
+Use AWS WAF to block malicious traffic.
+Define custom cache policies for secure data handling.
 
 
 
