@@ -6,7 +6,7 @@
      Log in to the AWS Console and go to the CloudFront service.
     Click Create Distribution and choose Web for standard content delivery.
     Set the origin, which could be an S3 bucket, an Elastic Load Balancer, or a custom server.
-    Configure cache behaviors, set the viewer protocol policy (HTTP/HTTPS), and define other settings like TTL (Time to Live) and logging.
+    Configure cache behaviors, set the viewer protocol policy (HTTP/HTTPS) and define other settings like TTL (Time to Live) and logging.
     If using a custom domain, I’d add it as an Alternate Domain Name and set up SSL with AWS Certificate Manager.
    After reviewing the settings, I would click Create Distribution, and CloudFront would deploy, providing a distribution domain (e.g., d1234.cloudfront.net).
     This setup helps in delivering content quickly to users around the world."
